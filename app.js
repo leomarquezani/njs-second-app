@@ -6,8 +6,9 @@ const bodyParser = require('body-parser');
 const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
-
 const app = express();
+
+app.set('view engine', 'pug');
 
 //add parser before the routes
 app.use(bodyParser.urlencoded({extended: false}));
