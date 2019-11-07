@@ -9,15 +9,16 @@ const shopRoutes = require("./routes/shop");
 
 const app = express();
 
-app.engine(
+/*app.engine(
   "hbs",
   expressHbs({
     layoutsDir: "views/layouts",
     defaultLayout: "main-layout",
     extname: "hbs"
   })
-); //for handlebar we need to create a new engine
-app.set("view engine", "hbs");
+);*/ //for handlebar we need to create a new engine
+//app.set("view engine", "hbs");
+app.set("view engine", "ejs");
 //app.set('view engine', 'pug');//set the template engine with express property view engine
 
 //add parser before the routes
